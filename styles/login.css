@@ -1,0 +1,103 @@
+/* Login container */
+.login-container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.subtitle {
+    color: #b8c5d6;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    letter-spacing: 2px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-field::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 1px;
+}
+
+.input-field:focus {
+    border-color: #64b5f6;
+    box-shadow: 0 0 20px rgba(100, 181, 246, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.enter-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(45deg, #1976d2, #64b5f6);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.enter-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(100, 181, 246, 0.4);
+}
+
+.error-message {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.error-message.show {
+    opacity: 1;
+}

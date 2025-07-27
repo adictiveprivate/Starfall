@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Puzzle 6</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/puzzle.css">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    
+    <div class="puzzle-container-small">
+        <div class="poem-line">
+            Overlay the thoughts you brushed aside,
+            The clearest paths are those that hide.
+        </div>
+        
+        <div class="puzzle-content-small">
+            <h2 class="puzzle-title">Stellar Words</h2>
+            <p class="puzzle-instruction">Fill the missing letters. Take each missing letter in order:</p>
+            
+            <div class="word-blanks">
+                <div class="word-item">_EBULA</div>
+                <div class="word-item">_LANET</div>
+                <div class="word-item">_NIVERSE</div>
+                <div class="word-item">_ADIUS</div>
+                <div class="word-item">_ULSAR</div>
+                <div class="word-item">_IGHT</div>
+                <div class="word-item">_ARTH</div>
+            </div>
+            
+            <div class="word-hints">
+                <div>Cloud of space gas</div>
+                <div>Celestial body orbiting a star</div>
+                <div>All of space and time</div>
+                <div>Distance from center to edge</div>
+                <div>Rotating neutron star</div>
+                <div>Electromagnetic radiation</div>
+                <div>Our home planet</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script>
+        // Auto-solve and close after 5 seconds
+        setTimeout(() => {
+            if (window.opener && window.opener.solvePuzzle) {
+                window.opener.solvePuzzle(6);
+            }
+            window.close();
+        }, 5000);
+    </script>
+</body>
+</html>

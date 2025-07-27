@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Puzzle 1</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/puzzle.css">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    
+    <div class="puzzle-container-small">
+        <div class="poem-line">
+            The stars don’t speak, yet still they glow,
+            As if they’ve seen what none should know.
+        </div>
+        
+        <div class="puzzle-content-small">
+            <h2 class="puzzle-title">Binary Cipher</h2>
+            
+            <div class="binary-display">
+                01110000 00100000 01111100 00100000 01100010 01101100 01110101 01100101
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script>
+        // Auto-solve and close after 3 seconds
+        setTimeout(() => {
+            if (window.opener && window.opener.solvePuzzle) {
+                window.opener.solvePuzzle(1);
+            }
+            window.close();
+        }, 3000);
+    </script>
+</body>
+</html>
